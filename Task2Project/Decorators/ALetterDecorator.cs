@@ -12,7 +12,6 @@ public sealed class ALetterDecorator : Decorator
     public override string ShowTime()
     {
         var res = new StringBuilder(TimeWrapper.ShowTime()).Insert(0, "AAA ").ToString();
-        Console.WriteLine(res);
         return res;
     }
 }

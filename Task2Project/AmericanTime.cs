@@ -5,13 +5,9 @@ namespace Task2Project;
 
 public sealed class AmericanTime : IRegionalDateTime
 {
-    public AmericanTime(DateTime time)
+    public AmericanTime()
     {
     }
     
-    public string ShowTime()
-    {
-        Console.WriteLine(DateTime.Now.ToString(CultureInfo.GetCultureInfo("en-US")));
-        return DateTime.Now.ToString("en-US");
-    }
+    public string ShowTime() => DateTime.Now.ToString("en-GB");
 }
