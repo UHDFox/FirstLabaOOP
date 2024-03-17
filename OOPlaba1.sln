@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPlaba1", "OOPlaba1\OOPlaba1.csproj", "{24E457B7-BF79-4C31-98D6-60DE52D36E7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "TestProject1\TestProject1.csproj", "{6D1EB08A-A6A9-4A72-A860-5D3C732A4696}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{6D1EB08A-A6A9-4A72-A860-5D3C732A4696}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task2Project", "Task2Project\Task2Project.csproj", "{54BD767A-3016-47DB-B5C5-CB6505D8EBD3}"
 EndProject

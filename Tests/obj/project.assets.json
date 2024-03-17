@@ -5550,11 +5550,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\progs\\projects\\OOPlaba1\\TestProject1\\TestProject1.csproj",
-      "projectName": "TestProject1",
-      "projectPath": "D:\\progs\\projects\\OOPlaba1\\TestProject1\\TestProject1.csproj",
+      "projectUniqueName": "D:\\progs\\projects\\OOPlaba1\\Tests\\Tests.csproj",
+      "projectName": "Tests",
+      "projectPath": "D:\\progs\\projects\\OOPlaba1\\Tests\\Tests.csproj",
       "packagesPath": "C:\\Users\\000\\.nuget\\packages\\",
-      "outputPath": "D:\\progs\\projects\\OOPlaba1\\TestProject1\\obj\\",
+      "outputPath": "D:\\progs\\projects\\OOPlaba1\\Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\000\\AppData\\Roaming\\NuGet\\NuGet.Config",
