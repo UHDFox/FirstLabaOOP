@@ -1,9 +1,6 @@
-using System.Formats.Asn1;
-using Xunit.Sdk;
+namespace Tests;
 
-namespace TestProject1;
-
-public sealed class UnitTest1
+public sealed class UnitTest
 {
     [Theory]
     [InlineData(1, 3, 2, 5, false)]
@@ -31,7 +28,6 @@ public sealed class UnitTest1
     
     [Theory]
     [InlineData(1,3, 2, 5, 3, 8)]
-    [InlineData(1,1, 1, 1, 2, 2)]
     [InlineData(1,1, 1, 1, 2, 2)]
     [InlineData(1,2, 2, 1, 3, 3)]
     public void Addition_ValidNumbers_ResultShouldBeCorrect(int n1, int n2, int n3, int n4, int n5, int n6)
