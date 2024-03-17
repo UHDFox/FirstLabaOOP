@@ -1,5 +1,3 @@
-using System;
-
 public sealed class RatNumber : IEquatable<RatNumber>
 {
     public int Numerator { get; private set; }
@@ -8,14 +6,19 @@ public sealed class RatNumber : IEquatable<RatNumber>
     
    public RatNumber(int a, int b)
    {
+       if (a == 0) b = 1;
+       
        if (b == 0) throw new ArgumentException("Denominator cannot be null");
        
-        Numerator = a;
-        Denominator = b;
-    }
+       var nok = FindGCD(a, b);
+
+       Numerator = a / nok;
+       Denominator = b / nok;
+   }
 
     private static int FindGCD(int a, int b)
     {
+        
         while (b != 0)
         {
             var temp = b;
@@ -29,9 +32,6 @@ public sealed class RatNumber : IEquatable<RatNumber>
 
     public override string ToString()
     {
-        int NOK = FindGCD(Numerator, Denominator);
-        Numerator = Numerator / NOK;
-        Denominator = Denominator / NOK;
         Console.WriteLine($"{Numerator}/{Denominator}");
         return $"{Numerator}/{Denominator}";
     }
@@ -47,9 +47,12 @@ public sealed class RatNumber : IEquatable<RatNumber>
     
     public static RatNumber operator -(RatNumber num1, RatNumber num2)
     {
-        var newNum = num1.Numerator - num2.Numerator;
-        var newDenom = num1.Denominator - num2.Denominator;
+        
+        
+        var newNum = num1.Numerator * num2.Denominator - num2.Numerator * num1.Denominator;
+        var newDenom = num1.Denominator * num2.Denominator;
 
+        
         return new RatNumber(newNum, newDenom);
     }
     
