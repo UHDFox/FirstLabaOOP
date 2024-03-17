@@ -42,10 +42,12 @@ public sealed class UnitTest
     }
     
     [Theory]
-    [InlineData(5,5, 1, 1, 4, 4)]
-    [InlineData(5,5, 6, 6, -1, -1)]
-    [InlineData(5, 3, 5, 8, 0, -5)]
-    [InlineData(1, 2, -3, -4, 4, 6)]
+    [InlineData(5,5, 1, 1, 0, 1)]
+    [InlineData(5,5, 6, 6, 0, 1)]
+    [InlineData(5, 3, 5, 8, 25, 24)]
+    [InlineData(1, 2, 3, 4, 1, -4)]
+    [InlineData(1, 2, -3, 4, 5, 4)]
+    [InlineData(1, 2, 3, -4, 5, 4)]
     public void Subtraction_ValidNumbers_ResultShouldBeCorrect(int n1, int n2, int n3, int n4, int n5, int n6)
     {
         var ratNum = new RatNumber(n1, n2);
@@ -56,11 +58,10 @@ public sealed class UnitTest
     }
     
     [Theory]
-    [InlineData(1, 1, -1, -1, true)]
-    [InlineData(5, 3, -5, -3, true)]
-    [InlineData(1, 1, 1, -1, false)]
-    [InlineData(1, 1, -1, 1, false)]
-    [InlineData(0, 1, 0, -1, true)]
+    [InlineData(1, 1, -1, 1, true)]
+    [InlineData(5, 3, -5, 3, true)]
+    [InlineData(1, 1, 1, 1, false)]
+    [InlineData(0, 1, 0, 1, true)]
     public void Negation_ValidNumbers_ResultShouldBeCorrect(int n1, int n2, int n3, int n4, bool expected)
     {
         var ratNum = new RatNumber(n1, n2);
@@ -81,7 +82,7 @@ public sealed class UnitTest
 
     [Theory]
     [InlineData(2, 2, 0, 1)]
-    [InlineData(1, 1, 0, 5)]
+    [InlineData(1, 1, 0, 1)]
     public void Division_SecondNumberIsZero_ThrowsArgumentException(int n1, int n2, int n3, int n4)
     {
         var ratNum1 = new RatNumber(n1, n2);
@@ -104,7 +105,7 @@ public sealed class UnitTest
     }
     
     [Theory]
-    [InlineData(4, 6, 2, 3, false)]
+    [InlineData(4, 6, 2, 3, true)]
     [InlineData(1, 1, 1, 1, true)]
     [InlineData(1, 2, 2, 3, true)]
     [InlineData(1, 2, 3, 2, true)]
