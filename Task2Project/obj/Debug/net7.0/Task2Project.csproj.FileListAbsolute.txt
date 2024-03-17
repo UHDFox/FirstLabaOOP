@@ -1,0 +1,11 @@
+D:\progs\projects\OOPlaba1\Task2Project\bin\Debug\net7.0\Task2Project.deps.json
+D:\progs\projects\OOPlaba1\Task2Project\bin\Debug\net7.0\Task2Project.dll
+D:\progs\projects\OOPlaba1\Task2Project\bin\Debug\net7.0\Task2Project.pdb
+D:\progs\projects\OOPlaba1\Task2Project\obj\Debug\net7.0\Task2Project.GeneratedMSBuildEditorConfig.editorconfig
+D:\progs\projects\OOPlaba1\Task2Project\obj\Debug\net7.0\Task2Project.AssemblyInfoInputs.cache
+D:\progs\projects\OOPlaba1\Task2Project\obj\Debug\net7.0\Task2Project.AssemblyInfo.cs
+D:\progs\projects\OOPlaba1\Task2Project\obj\Debug\net7.0\Task2Project.csproj.CoreCompileInputs.cache
+D:\progs\projects\OOPlaba1\Task2Project\obj\Debug\net7.0\Task2Project.dll
+D:\progs\projects\OOPlaba1\Task2Project\obj\Debug\net7.0\refint\Task2Project.dll
+D:\progs\projects\OOPlaba1\Task2Project\obj\Debug\net7.0\Task2Project.pdb
+D:\progs\projects\OOPlaba1\Task2Project\obj\Debug\net7.0\ref\Task2Project.dll

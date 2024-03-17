@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "OOPlaba1/1.0.0": {
+        "dependencies": {
+          "Task2Project": "1.0.0"
+        },
+        "runtime": {
+          "OOPlaba1.dll": {}
+        }
+      },
+      "Task2Project/1.0.0": {
+        "runtime": {
+          "Task2Project.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OOPlaba1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Task2Project/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
