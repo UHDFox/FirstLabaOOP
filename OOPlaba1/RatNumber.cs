@@ -1,3 +1,5 @@
+using System;
+
 public sealed class RatNumber : IEquatable<RatNumber>
 {
     public int Numerator { get; private set; }

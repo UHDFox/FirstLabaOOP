@@ -1,3 +1,5 @@
+using System;
+
 namespace Tests;
 
 public sealed class UnitTest
