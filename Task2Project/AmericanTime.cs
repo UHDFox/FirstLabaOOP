@@ -4,11 +4,8 @@ namespace Task2Project;
 
 public sealed class AmericanTime : IRegionalDateTime
 {
-    public DateTime Time;
-
-    public AmericanTime(DateTime? time = null)
+    public AmericanTime(DateTime time)
     {
-        Time = time ?? DateTime.Now;
     }
     
     public string ShowTime()

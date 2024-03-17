@@ -4,11 +4,8 @@ namespace Task2Project;
 
 public sealed class EuropeanTime : IRegionalDateTime
 {
-    public DateTime Time;
-
-    public EuropeanTime(DateTime? time = null)
+    public EuropeanTime(DateTime time)
     {
-        Time = time ?? DateTime.Now;
     }
     
     public string ShowTime()
