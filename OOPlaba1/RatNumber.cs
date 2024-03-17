@@ -1,3 +1,5 @@
+using System;
+
 public sealed class RatNumber : IEquatable<RatNumber>
 {
     public int Numerator { get; private set; }
@@ -103,10 +105,10 @@ public sealed class RatNumber : IEquatable<RatNumber>
 
     public static RatNumber operator -(RatNumber num1)
     {
-        return new RatNumber(-num1.Numerator, -num1.Denominator);
+        return new RatNumber(-num1.Numerator, num1.Denominator);
     }
 
-    public bool Equals(RatNumber? other) //to make tests more comfortable
+    public bool Equals(RatNumber? other) 
     {
         if (ReferenceEquals(null, other)) return false;
         if (ReferenceEquals(this, other)) return true;
